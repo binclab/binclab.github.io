@@ -1,0 +1,5 @@
+*-cache/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock

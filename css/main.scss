@@ -1,0 +1,17 @@
+---
+---
+
+/* main */
+:root {
+  --charcoal: #2B3C59;
+  --pink: #EA6069;
+  --flavescent: #F7E197;
+  --brown: #F2AB5A;
+  --red: #B54149;
+}
+
+@import "default";
+@import "header";
+@import "home";
+@import "potrait";
+@import "footer";

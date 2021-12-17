@@ -1,0 +1,17 @@
+<div id="footer">
+  <hr color="teal" size="1" width="100%" style="grid-column: 1 / span 2"></hr>
+  <div style="grid-column: 1 / span 1;">{{ site.description }}</div>
+  <ul id="sitelinks">
+    <li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="fb-button" class="dev-link">
+      <svg class="svg-icon"><use xlink:href="{{ '/img/minima-social-icons.svg#facebook' | relative_url }}"></use></svg>
+    </a></li>
+    <li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="git-button" class="dev-link">
+      <svg class="svg-icon"><use xlink:href="{{ '/img/minima-social-icons.svg#twitter' | relative_url }}"></use></svg>
+    </a></li>
+    <li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="git-button" class="dev-link">
+      <svg class="svg-icon"><use xlink:href="{{ '/img/minima-social-icons.svg#instagram' | relative_url }}"></use></svg>
+    </a></li>
+  </ul>
+  <a style="grid-row: 3 / span 1;" href="mailto:{{ site.email }}">{{ site.email }}</a>
+
+</div>

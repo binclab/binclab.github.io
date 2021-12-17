@@ -1,0 +1,22 @@
+author: "Bret Joseph"
+title: "Binc Lab"
+email: "bincbw@gmail.com"
+description: "Software Developer"
+baseurl: ""
+url: "https://www.binclab.com"
+twitter_username: bincbw
+github_username:  bretantonio
+facebook_username: bincbw
+instagram_username: bincbw
+timezone: "Africa/Gaborone"
+# Build settings
+markdown: kramdown
+destination: docs
+livereload: true
+exclude:
+  - Makefile
+  - Gemfile.lock
+  - README.md
+plugins:
+  - jekyll-feed
+  - jekyll-admin

@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/_default.scss",
+		"_sass/_header.scss",
+		"_sass/_home.scss",
+		"_sass/_potrait.scss",
+		"_sass/_footer.scss"
+	],
+	"sourcesContent": [
+		"/* main */\r\n:root {\r\n  --charcoal: #2B3C59;\r\n  --pink: #EA6069;\r\n  --flavescent: #F7E197;\r\n  --brown: #F2AB5A;\r\n  --red: #B54149;\r\n}\r\n\r\n@import \"default\";\r\n@import \"header\";\r\n@import \"home\";\r\n@import \"potrait\";\r\n@import \"footer\";\r\n",
+		"/* Default */\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\n\nli a {\n  display: block;\n  color: white;\n  padding: 14px 16px;\n  text-decoration: none;\n}\n\nli a:hover {\n  background-color: var(--charcoal);\n}\n\nth {\n  text-align: center;\n}\n\ntd {\n  text-align: center;\n}\n\n.svg-icon {\n  width: 16px;\n  height: 16px;\n  display: inline-block;\n}\n",
+		"/***\t\tHeader\t\t***/\n\n#navBar {\n  overflow: hidden;\n  background-color: teal;\n  font-family: Copperplate, Papyrus, Fantasy;\n}\n\n#siteSearch { \n  display: flex;\n  background-color: white;\n  margin-top: 10px;\n}\n\ninput:focus {\n  border: 2px solid teal;\n}\n\n#searchButton {\n  margin-top: 0px;\n  height: 27px;\n  padding-bottom: 2px;  \n}\n",
+		"/* Home */\n\n#siteHome {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap;\n  justify-content: space-between;\n}\n\n#siteContent {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  justify-content: space-between;\n  min-height: 80vh;\n}\n\n/*\n#siteFooter {\n    align-self: flex-end;\n}*/\n\n.featured-image {\n  margin: 8px;\n  width: 128px;\n}\n",
+		"",
+		"/* Footer */\n\n.dev-link {\n  display: inline;\n  border-radius: 32px;\n  transition: all 1s;\n}\n\n\n.fb-button:hover {\n  background-color: #3B5998;\n}\n\n.git-button:hover {\n  background-color: #666666;\n}\n\n#footer {\n  display: grid;\n  grid-gap: 4px;\n  justify-content: space-between;\n  font-size: 16px;\n  text-align: center;\n}\n\n#sitelinks {\n  display: flex;\n  grid-row: 2 / span 2;\n  grid-column: 2 / span 1;\n}\n\n#devlinks {\n  display: flex;\n  align-items: start;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,UAAU;CACT,AAAD,IAAK,CAAC,EACJ,UAAU,CAAA,QAAC,EACX,MAAM,CAAA,QAAC,EACP,YAAY,CAAA,QAAC,EACb,OAAO,CAAA,QAAC,EACR,KAAK,CAAA,QAAC,GACP;;ACPD,aAAa;AAEb,AAAA,EAAE,CAAC,EACD,eAAe,EAAE,IAAI,EACrB,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,GACX;;AAED,AAAA,EAAE,CAAC,CAAC,CAAC,EACH,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,SAAS,EAClB,eAAe,EAAE,IAAI,GACtB;;AAED,AAAA,EAAE,CAAC,CAAC,CAAC,KAAK,CAAC,EACT,gBAAgB,EAAE,eAAe,GAClC;;AAED,AAAA,EAAE,CAAC,EACD,UAAU,EAAE,MAAM,GACnB;;AAED,AAAA,EAAE,CAAC,EACD,UAAU,EAAE,MAAM,GACnB;;AAED,AAAA,SAAS,CAAC,EACR,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EACZ,OAAO,EAAE,YAAY,GACtB;;AC/BD,kBAAkB;AAElB,AAAA,OAAO,CAAC,EACN,QAAQ,EAAE,MAAM,EAChB,gBAAgB,EAAE,IAAI,EACtB,WAAW,EAAE,6BAA6B,GAC3C;;AAED,AAAA,WAAW,CAAC,EACV,OAAO,EAAE,IAAI,EACb,gBAAgB,EAAE,KAAK,EACvB,UAAU,EAAE,IAAI,GACjB;;AAED,AAAA,KAAK,CAAC,KAAK,CAAC,EACV,MAAM,EAAE,cAAc,GACvB;;AAED,AAAA,aAAa,CAAC,EACZ,UAAU,EAAE,GAAG,EACf,MAAM,EAAE,IAAI,EACZ,cAAc,EAAE,GAAG,GACpB;;ACtBD,UAAU;AAEV,AAAA,SAAS,CAAC,EACR,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,SAAS,EAAE,MAAM,EACjB,eAAe,EAAE,aAAa,GAC/B;;AAED,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,GAAG,EACnB,SAAS,EAAE,MAAM,EACjB,eAAe,EAAE,aAAa,EAC9B,UAAU,EAAE,IAAI,GACjB;;AAED,0CAGG;AAEH,AAAA,eAAe,CAAC,EACd,MAAM,EAAE,GAAG,EACX,KAAK,EAAE,KAAK,GACb;;AEzBD,YAAY;AAEZ,AAAA,SAAS,CAAC,EACR,OAAO,EAAE,MAAM,EACf,aAAa,EAAE,IAAI,EACnB,UAAU,EAAE,MAAM,GACnB;;AAGD,AAAA,UAAU,CAAC,KAAK,CAAC,EACf,gBAAgB,EAAE,OAAO,GAC1B;;AAED,AAAA,WAAW,CAAC,KAAK,CAAC,EAChB,gBAAgB,EAAE,OAAO,GAC1B;;AAED,AAAA,OAAO,CAAC,EACN,OAAO,EAAE,IAAI,EACb,QAAQ,EAAE,GAAG,EACb,eAAe,EAAE,aAAa,EAC9B,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,MAAM,GACnB;;AAED,AAAA,UAAU,CAAC,EACT,OAAO,EAAE,IAAI,EACb,QAAQ,EAAE,UAAU,EACpB,WAAW,EAAE,UAAU,GACxB;;AAED,AAAA,SAAS,CAAC,EACR,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,KAAK,GACnB"
+}
