@@ -13,6 +13,8 @@ timezone: "Africa/Gaborone"
 markdown: kramdown
 destination: docs
 livereload: true
+include:
+  - revision
 exclude:
   - Makefile
   - Gemfile.lock
