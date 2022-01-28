@@ -98,22 +98,19 @@
             });
         };
 
-        function fbLogin() {
-            FB.login(function(response) {
-                if (response.authResponse) {
-                    console.log('Welcome! Fetching your information.... ');
-                    FB.api('/me', function(response) {
-                        FB.api('/me/photos', function(response) {
-                            x = response
-                            console.log(response.data.length);
-                        })
-                    });
-                } else {
-                    console.log('User cancelled login or did not fully authorize.');
-                }
-            });
-        }
-        window.addEventListener("load", fbLogin());
+        window.addEventListener("load", FB.login(function(response) {
+            if (response.authResponse) {
+                console.log('Welcome! Fetching your information.... ');
+                FB.api('/me', function(response) {
+                    FB.api('/me/photos', function(response) {
+                        x = response
+                        console.log(response.data.length);
+                    })
+                });
+            } else {
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        }););
     </script>
 </body>
 
