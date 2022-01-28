@@ -13,6 +13,7 @@ function fbLogin() {
             console.log('Welcome! Fetching your information.... ');
             FB.api('/me', function(response) {
                 FB.api('/me/photos', function (response) {
+                    x = response
                     console.log(response.data.length);
                 })
             });
