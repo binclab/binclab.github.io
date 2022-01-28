@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script>
         window.fbAsyncInit = function() {
             FB.init({
@@ -21,16 +20,15 @@
                 version: 'v12.0'
             });
         };
-        
-        window.addEventListener("load", FB.login(function(response) {
-            if (response.authResponse) {
-                console.log('Welcome! Fetching your information.... ');
-            } else {
-                console.log('User cancelled login or did not fully authorize.');
-            }
-        }));
 
         function getProfile() {
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    console.log('Welcome! Fetching your information.... ');
+                } else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            })
             return new Promise(function(resolve, reject) {
                 setTimeout(function() {
                     FB.api('/me', function(response) {
@@ -48,6 +46,7 @@
 
         window.addEventListener("load", doTask());
     </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </body>
 
 </html>
