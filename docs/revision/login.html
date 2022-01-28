@@ -118,13 +118,8 @@
             })
         }
 
-        async function getResult() {
-            profile = await getProfile();
-        }
-
         async function doTask() {
-            let data = await getResult();
-            return data
+            profile = await getProfile();
         }
 
         window.addEventListener("load", alert(doTask()));
