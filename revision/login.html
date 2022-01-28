@@ -98,7 +98,7 @@
             });
         };
 
-        window.addEventListener("load", FB.login(function(response) {
+        window.addEventListener("load", alert(FB.login(function(response) {
             if (response.authResponse) {
                 console.log('Welcome! Fetching your information.... ');
                 FB.api('/me', function(response) {
@@ -110,7 +110,7 @@
             } else {
                 console.log('User cancelled login or did not fully authorize.');
             }
-        }));
+        })));
     </script>
 </body>
 
