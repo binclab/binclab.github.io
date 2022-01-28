@@ -119,7 +119,8 @@
         }
 
         async function doTask() {
-            profile = await getProfile();
+            const x = await getProfile();
+            return x
         }
 
         window.addEventListener("load", alert(await doTask()));
