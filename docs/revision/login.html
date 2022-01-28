@@ -120,10 +120,11 @@
 
         async function doTask() {
             const x = await getProfile();
+            alert(console.log(x.name))
             return x
         }
 
-        window.addEventListener("load", alert(await doTask()));
+        window.addEventListener("load", doTask());
     </script>
 </body>
 
