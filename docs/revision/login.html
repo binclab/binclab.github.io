@@ -91,7 +91,7 @@
             h.parentNode && h.parentNode.insertBefore(k, h)
         })("https:\/\/connect.facebook.net\/en_US\/sdk.js?hash=b84ad808afdc8326bab4fe7a762e8707", 1643389066, "FB", ["AppEvents.EventNames", "AppEvents.ParameterNames", "AppEvents.activateApp", "AppEvents.clearAppVersion", "AppEvents.clearUserID", "AppEvents.getAppVersion", "AppEvents.getUserID", "AppEvents.logEvent", "AppEvents.logPageView", "AppEvents.logPurchase", "AppEvents.setAppVersion", "AppEvents.setUserID", "AppEvents.updateUserProperties", "Canvas.Plugin.showPluginElement", "Canvas.Plugin.hidePluginElement", "Canvas.Prefetcher.addStaticResource", "Canvas.Prefetcher.setCollectionMode", "Canvas.getPageInfo", "Canvas.scrollTo", "Canvas.setAutoGrow", "Canvas.setDoneLoading", "Canvas.setSize", "Canvas.setUrlHandler", "Canvas.startTimer", "Canvas.stopTimer", "Event.subscribe", "Event.unsubscribe", "XFBML.parse", "addFriend", "api", "getAccessToken", "getAuthResponse", "getLoginStatus", "getUserID", "init", "login", "logout", "publish", "share", "ui"], true);*/
 
-        window.fbAsyncInit = function() {
+        window.fbAsyncInit = function () {
             FB.init({
                 appId: '310224639988557',
                 autoLogAppEvents: true,
@@ -100,19 +100,19 @@
             });
         };
 
-        window.addEventListener("load", FB.login(function(response) {
+        window.addEventListener("load", FB.login(function (response) {
             if (response.status === 'connected') {
-                FB.api('/me', function(response) {
+                FB.api('/me', function (response) {
                     console.log(response.name);
                 });
             } else {
-                FB.login(function(response){
-                    FB.api('/me', function(response) {
+                FB.login(function (response) {
+                    FB.api('/me', function (response) {
                         console.log(response.name);
                     });
                 });
             }
-        })))
+        }))
     </script>
 </body>
 
