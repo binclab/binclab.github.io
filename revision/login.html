@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Social Login">
-    <meta name="keywords" content="Home, Shop">
-    <meta name="author" content="Bret Joseph">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
-    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<title>Login</title>
 </head>
-
 <body>
-    <script>
 
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '310224639988557',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v12.0'
-            });
-        };
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
 
-        window.addEventListener("load", FB.login(function (response) {
-            if (response.status === 'connected') {
-                FB.api('/me', function (response) {
-                    console.log(response.name);
-                });
-            } else {
-                FB.login(function (response) {
-                    FB.api('/me', function (response) {
-                        console.log(response.name);
-                    });
-                });
-            }
-        }))
-    </script>
 </body>
-
 </html>
